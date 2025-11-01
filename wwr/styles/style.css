@@ -221,16 +221,16 @@ main.home-grid {
 }
 
 .camping-card {
- /*   text-align: center;
-    color: #7d5037; */
+    text-align: center;
+    color: #7d5037; 
     margin: 200px 0;
     grid-column: 5 / 7;
     grid-row: 2 / 3;
 }
 
 .rapids-card {
- /*   text-align: center;
-    color: #7d5037;  */
+ text-align: center;
+    color: #7d5037;  
     margin: 200px 0;
     grid-column: 8 / 10;
     grid-row: 2 / 3;
@@ -243,6 +243,7 @@ main.home-grid {
 }
 
 .mountains {
+    width: 100%;
     grid-column: 2 / 7;
     grid-row: 5 / 8;
     box-shadow: 5px 5px 10px #7d5037;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whitewater Rafting | Rafting Raptors | Home</title>
-    <link rel="stylesheet" href="styles/contactus.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <div id="content">
@@ -14,61 +14,111 @@
     </a>
     <nav>
         <a href="index.html">Home</a>
-        <a href="#">Page 2</a>
+        <a href="wireframe.html">Wireframe</a>
         <a href="site-plan-rafting.html">Site Plan</a>
         <a href= "contactus.html" >Contact Us</a>
     </nav>
 </header>
 
-<!--
- <div id="hero">
-    <div id="hero-box">
-        <img id="hero-img" src="images/hero.png" alt="People enjoying white water rafting">
-    </div>
-    <section id="hero-msg">
-        <h1 class="home-title">Reach out to our Team</h1>
-        <h4>Take on the Challenge at Rafting Raptors </h4>
-        <div class="button-box">
-            <a class="book" href="contactus.html">Book Now</a>
+<!-- HERO SECTION -->
+<section class="hero">
+    <img src="images/rivers.jpg" class="hero-img" alt="River background">
+    <div class="hero-content">
+        <h1>Contact Our Team</h1>
+        <p>We love questions and feedback — and we’re always happy to help!<br>Here are some ways to contact us.</p>
+
+        <div class="contact-buttons">
+            <div class="contact-box">
+                <h3>Book Whitewater Rafting Tour</h3>
+                <p>Call our team and book your Whitewater Rafting Tour today!</p>
+                <span class="phone">1-800-888-RAFT</span>
+            </div>
+
+            <div class="contact-box">
+                <h3>Book a Campsite</h3>
+                <p>We are waiting to help you and your team — so don’t hesitate to reach out!</p>
+                <button>Contact Support</button>
+            </div>
         </div>
-    </section>
-</div>
-<main class="home-grid">
-    <section class="rivers-card">
-        <img class="card-img" src="images/rivers.jpg" alt="river in forest">
-        <img class="icon" src="images/river_icon.png" alt="river icon">
-        <h2>Rivers</h2>
-    </section>
-    <section class="camping-card">
-        <img class="card-img" src="images/camping.jpg" alt="tent in mountains">
-        <img class="icon" src="images/fire_icon.png" alt="fire icon">
-        <h2>Camping</h2>
-    </section>
-    <section class="rapids-card">
-        <img class="card-img" src="images/rapids.jpg" alt="rafting boat">
-        <img class="icon" src="images/oars.png" alt="oars icon">
-        <h2>Rapids</h2>
-    </section>
-    <div id="background"></div> 
-    <img class="mountains" src="images/mountains.jpg" alt="Misty mountains">
-    <section class="msg">
-        <h2>More Than Just The Thrill</h2>
-        <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; 
-            it's way more than just the rapids. It's a great way to get away from it all 
-            and relax amongst all the beauty of the great outdoors. </p>
-        <a class='join' href="rivers.html">Join Us</a>
-    </section>
-</main>
-</div>
--->
- <section id="page2-msg">
-        <h1 class="home-title">Wireframe</h1>
-    </section>
-<div class="wireframe-box"> 
-<div class="wireframe-container">
-    <img class="wireframe" src="images/wireframe.png" alt="contact us wireframe">
-</div>
-</div>
+    </div>
+</section>
+
+<!-- CALENDAR SECTION -->
+<section class="calendar-section">
+    <h2>Book a Date</h2>
+
+    <div class="calendar-box">
+        <div class="calendar-weekday">
+            <span class="weekday">Friday</span>
+        </div>
+        <div class="calendar-header">
+            <span class="month">FEB</span>
+            <span class="day">19</span>
+            <span class="year">2026</span>
+        </div>
+
+        <table class="calendar">
+            <tr>
+                <th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th>
+            </tr>
+            <tr><td>31</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+            <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr>
+            <tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td class="selected">19</td><td>20</td></tr>
+            <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr>
+            <tr><td>28</td><td>29</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+        </table>
+
+        <div class="calendar-buttons">
+            <button class="cancel">Cancel</button>
+            <button class="ok">OK</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="form-section">
+    <h2>Send Us a Message</h2>
+    <p>Send us a message and we’ll respond within 24 hours.</p>
+    <div>
+    <form>
+        <div class="form-row">
+            <input type="text" placeholder="Your name">
+            <input type="email" placeholder="Your email address">
+        </div>
+        <textarea placeholder="Message"></textarea>
+        <div>
+        <button type="submit" class="send">Send</button>
+        </div>
+    </div>    
+    </form>
+</section>
+<div>
+<!-- FOOTER MAP -->
+<section class="footer-map">
+    <div class="footer-left">
+        <h3>Headquarters</h3>
+        <p>Idaho, United States</p>
+
+    
+        <p> 133 Crocodile Dr</p>
+        <p>contact-us@raftingraptors.com</p>
+        <p>1-800-888-RAFT</p>
+
+        <div class="social">
+            <img src="images/facebook.png">
+            <img src="images/twitter.png">
+            <img src="images/instagram.png">
+        </div>
+    </div>
+
+
+    <div class="footer-right">
+        <img src="images/byui.png" alt="BYU-Idaho Campus Map" usemap="#byui-map">
+
+    <script src="script.js"></script>
+    </div>
+</section>
+
 <footer>
     <p>Rafting Raptors &copy; 2025 - Lee Ann Staley</p>
     <p><a href="site-plan-rafting.html">Site Plan</a></p>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
 
-
+/* BODY */
 body {
     max-width: 1600px;
     margin: 0 ;
@@ -16,10 +16,13 @@ body {
     color: var(--headline-color-on-white);
 }
 
+/* HEADER */
+
 header {
     background-color:#6b793e; 
     display: grid;
     grid-template-columns: 150px auto;
+       
 }
 nav a:hover {
     background-color: #6b793e;
@@ -47,7 +50,7 @@ nav {
          url(fonts/RockSalt-Regular.ttf) format('tff');
     font-style: normal;
 }
-
+ 
 #logo_link {
     padding-top: 5px; 
     justify-self: center;
@@ -100,6 +103,7 @@ h4 {
     color: white;
     line-height: 1.5em;
     font-family: "Rock Salt", Serif , sans-serif;
+    letter-spacing: +0.03em;
 }    
 .msg p {
     background-color: #6b793e;
@@ -109,7 +113,310 @@ h4 {
     padding-bottom: 15px;
 }    
 
+/* WIREFRAME */
 
+#wireframe-msg h1 {
+    margin-top: 50px;
+    font-family: "Rock Salt";
+    color:#7d5037;
+}
+
+/* HERO */ 
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.hero-content {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    color: white;
+}
+
+
+.hero-content h1 {
+    font-family: "Rock Salt";
+    font-size: 2.2em;
+    margin: 0;
+}
+
+.hero-content p {
+    color: #e6e6e6;
+    margin-top: 8px;
+}
+
+/* Boxes under hero */
+.contact-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact-box {
+    width: 280px;
+    background: white;
+    color: #7d5037;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px gba(0,0,0,0.25r);
+}
+
+.contact-box h3 {
+    font-family: "Rock Salt";
+    margin-bottom: 40px;
+}
+
+.contact-box button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #6b793e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+
+.contact-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contact-box {
+    background: white;
+    color: white;
+    padding: 20px;
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px white;
+}
+
+.contact-box h3 { margin-bottom: 5px; }
+
+.contact-box button {
+    background: #3e4a23;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.phone {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* CONTACT */ 
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.hero-content {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.contact-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contact-box {
+    background: white;
+    color: #333;
+    padding: 20px;
+    width: 260px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.contact-box h3 { margin-bottom: 5px; }
+
+.contact-box button {
+    background: #3e4a23;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.phone {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* CALENDAR */ 
+.calendar-section h2 {
+    margin-top: 50px;
+    font-family: "Rock Salt";
+    color:#7d5037;
+    letter-spacing: +0.03em;
+}
+
+.calendar-box {
+    margin: 25px auto;
+    width: 70%;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    margin-bottom: 50px;
+}
+
+.calendar-weekday {
+    background-color: #7d5037;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.calendar-header {
+    background-color: #6b793e;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.calendar {
+    width: 100%;
+   border-collapse: collapse; 
+}
+
+.calendar th, .calendar td {
+    padding: 12px;
+    font-size: 18px;
+}
+
+.selected {
+    background-color: #6b793e;
+    color: white;
+    border-radius: 50%;
+}
+
+.calendar-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+.calendar-buttons button {
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel {
+    background: #dcdcdc;
+}
+
+.ok {
+    background: #6b793e;
+    color: white;
+}
+
+
+/* CONTACT FORM */
+.form-section {
+    background-color: #c6ad95;
+    padding: 400px 0;
+    margin-top: 400px;
+}
+
+.form-section h2 {
+    font-family: "Rock Salt";
+    letter-spacing: +0.03em;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 400px;
+}
+
+.form-row input,
+textarea {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 500px;
+    margin-top: 20px;
+}
+
+.send {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: #6b793e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+/* MAP */
+
+.footer-map {
+    display: flex;
+    background: #71813a;
+    padding: 40px;
+    gap: 30px;
+}
+
+.footer-left {
+    width: 30%;
+    text-align: left;
+    color: white;
+}
+
+.footer-left h3 {
+    font-family: "Rock Salt";
+    color: white;
+}
+
+.footer-right img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* FOOTER */
 
 footer {
     background-color: #6b793e;
@@ -149,6 +456,26 @@ footer a:hover {
     color: white;
 }
 
+#rivers {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+	width: 100%;
+	height: 800px;
+	box-shadow: 0px 4px 4px #71483140;
+}
+
+#rivers-img {
+    width: 100%;
+    height: 900px;    
+}
+
+#rivers-box {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+    z-index: -1;
+}
+
 .icon {
     width: 80px;
     padding-top: 10px;
@@ -164,6 +491,7 @@ nav a {
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
     color: white;
+    margin-top: 50px;
 }
 
 #hero-msg {
@@ -185,6 +513,8 @@ main section {
 main section img {
     box-sizing: border-box;
 }
+
+
 
 main.home-grid {
     display:grid;
@@ -248,6 +578,84 @@ main.home-grid {
     grid-row: 5 / 8;
     box-shadow: 5px 5px 10px #7d5037;
 }   
+
+/* BOXES UNDER HERO */
+.contact-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact-box {
+    width: 400px;
+    background: #6b793e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.25);
+}
+
+.contact-box h3 {
+    font-family: "Rock Salt";
+    margin-bottom: 10px;
+}
+
+.contact-box button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #7d5037;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+/* CONTACT FORM */
+.form-section {
+    background-color: #c6ad95;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.form-section h2 {
+    font-family: "Rock Salt";
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.form-row input,
+textarea {
+    width: 420px;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 200px;
+    width: 60%;
+    margin-top: 15px;
+}
+
+.send {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background: #7d5037;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* FOOTER */
 
 footer a {
     text-align: center;

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rafting | Rafting Raptors | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+<header>
+    <a id="logo_link" href="index.html">
+        <img class="logo" src="images/rafting_logo.png" alt="Rafting Raptors Logo">
+    </a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="wireframe.html">Wireframe</a>
+        <a href="site-plan-rafting.html">Site Plan</a>
+        <a href= "contactus.html" >Contact Us</a>
+        <a href=" contactform.html" >Contact Form</a>
+    </nav>
+</header>
+<div></div>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <img src="images/rivers.jpg" class="hero-img" alt="River background">
+    <div class="hero-content">
+        <h1>Contact Our Team</h1>
+        <p>We love questions and feedback — and we’re always happy to help!<br>Here are some ways to contact us.</p>
+
+        <div class="contact-buttons">
+            <div class="contact-box">
+                <h3>Book Whitewater Rafting Tour</h3>
+                <p>Call our team and book your Whitewater Rafting Tour today!</p>
+                <span class="phone">1-800-888-RAFT</span>
+            </div>
+
+            <div class="contact-box">
+                <h3>Book a Campsite</h3>
+                <p>We are waiting to help you and your team — so don’t hesitate to reach out!</p>
+                <button>Contact Support</button>
+            </div>
+        </div>
+    </div>
+</section>
+<div></div>
+
+<!-- CONTACT FORM PRACTICE -->
+<h1>Contact Form Practice</h1>
+<form action="/my-handling-form-page" method="post">
+  <p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name">
+  </p>
+
+  <p>
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="user_email">
+  </p>
+
+  <p>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </p>
+
+  <p class="button">
+    <button type="submit">Send your message</button>
+  </p>
+</form>
+
+
+<footer>
+    <p>Rafting Raptors &copy; 2025 - Lee Ann Staley</p>
+    <p><a href="site-plan-rafting.html">Site Plan</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
+
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body> 
+</html> 

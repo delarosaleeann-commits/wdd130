@@ -99,6 +99,8 @@ p.colored {
   color: var(--paragraph-color-on-color);
 }
 
+/* Header */
+
 nav {
   background-color: var(--nav-background-color);
   line-height: 3em;
@@ -124,6 +126,40 @@ nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
+
+
+/* FOOTER */ 
+
+footer {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+footer  {
+  list-style-type: none;
+  display: flex;
+
+}
+footer a {
+  padding:1em;
+  min-width: 120px;
+  text-decoration: none;
+  padding: 10px;
+
+}
+footer a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+footer a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+
+
+
+
 
 .sitemap {
   display: grid;

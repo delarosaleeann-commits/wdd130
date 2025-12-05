@@ -6,6 +6,7 @@
   <title>Portfolio</title>
   <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
 
+
  <!-- NAVIGATION -->
   <nav>
         <a href="index.html">Home</a>
@@ -38,11 +39,12 @@
   </section>
 
 <!-- MODAL -->
-  <div id="img-modal" class="modal">
+  <div id="myModal" class="modal">
     <span class="close">&times;</span>
-    <img class="modal-content" id="modal-img-display">
+    <img class="modal-content" id="imgModal">
     <div id="caption"></div>
   </div>
+
 
   <hr>
 
@@ -57,29 +59,28 @@
 
 <!-- MODAL SCRIPT -->
   <script>
-    const modal = document.getElementById("img-modal");
-    const modalImg = document.getElementById("modal-img-display");
-    const captionText = document.getElementById("caption");
-    const images = document.querySelectorAll(".modal-img");
-    const closeBtn = document.querySelector(".close");
+    // Get modal
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("imgModal");
+    var captionText = document.getElementById("caption");
 
-    images.forEach(img => {
-      img.addEventListener("click", () => {
+    // All gallery images
+    var imgs = document.querySelectorAll(".gallery img");
+
+    // Loop for each image
+    imgs.forEach(function(img) {
+      img.onclick = function() {
         modal.style.display = "block";
-        modalImg.src = img.src;
-        captionText.textContent = img.alt;
-      });
-    });
-
-    closeBtn.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        modal.style.display = "none";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
       }
     });
+
+    // Close modal
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
   </script>
 
 </body>

@@ -6,26 +6,47 @@
   <title>Portfolio</title>
   <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
 
+ <!-- NAVIGATION -->
   <nav>
         <a href="index.html">Home</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="aboutus.html">About Us</a>
-      </nav>
-      <hr>
+  </nav>
 
+    <hr>
+</section>
 
+<!-- LOGO SECTION -->
+  <section class="logo-section">
+    <h1>PORTRAITS</h1>
+      <img class="logo-img" src="images/LenselleLogo.jpg" alt="Lenselle Photography Logo">
+      <button class="book-btn">BOOK NOW</button>
+  </section>
 
-<h3>Portfolio Wireframe</h3>
+<!-- PORTRAITS -->
+  <section class="portraits">
+    <div class="portrait-text">
+      Welcome to Lenselle Photography! Explore our portfolio showcasing a variety of photography styles including portraits, couples, families, and more. Each photograph captures a unique moment in time, reflecting the beauty and emotion of the subject. Browse through our collections to see the artistry and creativity that defines Lenselle Photography.
+    </div>
+  </section>
+     
+<!-- GALLERY -->
+  <section class="gallery">  
+    <img class="modal-img" src="images/lp_pic1.png" alt="gallery portrait 1">
+    <img class="modal-img" src="images/lp_pic2.png" alt="gallery portrait 2">
+    <img class="modal-img" src="images/lp_pic3.png.png" alt="gallery portrait 3">
+  </section>
+
+<!-- MODAL -->
+  <div id="img-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img-display">
+    <div id="caption"></div>
+  </div>
+
+  <hr>
+
 <img src="images/lp_portfolio_wireframe.png" alt="wireframe for portfolio">
-    <p>Welcome to Lenselle Photography! Explore our portfolio showcasing a variety of photography styles including portraits, couples, families, and more. Each photograph captures a unique moment in time, reflecting the beauty and emotion of the subject. Browse through our collections to see the artistry and creativity that defines Lenselle Photography.
-      </p>
-        <img src="images/lp_pic1.png" alt="potrait image 1">
-        <img src="images/lp_pic2.png" alt="potrait image 2">
-        <img src="images/lp_pic3.png" alt="potrait image 3">
-        <img src="images/lp_pic4.png" alt="potrait image 4">
-
-      </ul>
-
 
 <hr>
 
@@ -33,4 +54,37 @@
          <a href="site-plan.html">Site Plan</a>
          </footer>
          
+
+<!-- MODAL SCRIPT -->
+  <script>
+    const modal = document.getElementById("img-modal");
+    const modalImg = document.getElementById("modal-img-display");
+    const captionText = document.getElementById("caption");
+    const images = document.querySelectorAll(".modal-img");
+    const closeBtn = document.querySelector(".close");
+
+    images.forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.textContent = img.alt;
+      });
+    });
+
+    closeBtn.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+
+
 </html>
+
+
